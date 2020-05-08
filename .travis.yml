@@ -2,8 +2,6 @@
 language: java
 jdk:
   - openjdk8
-services:
-  - docker
 deploy:
   provider: heroku
   api-key:
