@@ -13,6 +13,9 @@ before_script:
 
 language: java
 
+services:
+  - docker
+
 jdk:
   - openjdk8
 
