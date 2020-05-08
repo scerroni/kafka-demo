@@ -4,6 +4,5 @@ jdk:
   - openjdk8
 deploy:
   provider: heroku
-  api-key:
-    secure: d7b983cc-196b-4251-924c-6aea1cfbf020
+  api_key: $HEROKU_API_KEY
   app: murmuring-crag-67285
