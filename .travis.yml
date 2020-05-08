@@ -5,5 +5,5 @@ jdk:
 deploy:
   provider: heroku
   api-key:
-    secure: $HEROKU_API_KEY
+    secure: d7b983cc-196b-4251-924c-6aea1cfbf020
   app: murmuring-crag-67285
