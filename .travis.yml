@@ -4,9 +4,6 @@ jdk:
   - openjdk8
 services:
   - docker
-env:
-  global:
-    - secure: d7b983cc-196b-4251-924c-6aea1cfbf020
 deploy:
   provider: heroku
   api-key:
