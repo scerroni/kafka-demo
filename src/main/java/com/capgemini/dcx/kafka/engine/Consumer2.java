@@ -13,7 +13,9 @@ public class Consumer2 {
     private final Logger logger = LoggerFactory.getLogger(Consumer2.class);
 
     @KafkaListener(topics = "users", groupId = "group_id_2")
-    public void consume(String message) throws IOException {
+    public void consume(String message) throws IOException, InterruptedException {
+        //Thread.sleep(5000);
+        //logger.info("Ho aaspettato 5 secondi...");
         logger.info(String.format("#### -> Consumed message 2 -> %s", message));
     }
 }

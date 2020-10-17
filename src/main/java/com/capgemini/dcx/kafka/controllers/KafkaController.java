@@ -3,10 +3,7 @@ package com.capgemini.dcx.kafka.controllers;
 
 import com.capgemini.dcx.kafka.engine.Producer;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/kafka")
@@ -20,7 +17,7 @@ public class KafkaController {
     }
 
     @PostMapping(value = "/publish")
-    public void sendMessageToKafkaTopic(@RequestParam("message") String message) {
+    public void sendMessageToKafkaTopic(@RequestBody String message) {
         this.producer.sendMessage(message);
     }
 }
